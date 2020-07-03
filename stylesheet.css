@@ -211,6 +211,10 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
+.mail {
+  padding: 0;
+}
+
 /* タブレット向けレイアウト */
  @media (max-width: 1040px) {
   .main-wrapper {
