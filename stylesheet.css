@@ -203,6 +203,7 @@ p {
 .footer-contact li {
   color: #2b546a;
   display: inline-block;
+  margin-left: -40px;
 }
 
 a:link, a:visited, a:hover, a:active {
