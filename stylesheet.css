@@ -16,7 +16,7 @@ ul {
   line-height: 60px;
 }
 
-.header > li{
+.header li{
   display: inline-block;
   margin:0 30px;
   font-size: large;
@@ -209,6 +209,10 @@ p {
 a:link, a:visited, a:hover, a:active {
   color: black;
   text-decoration: none;
+}
+
+li {
+  padding: 0;
 }
 
 /* タブレット向けレイアウト */
