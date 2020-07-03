@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ','ＭＳ Ｐゴシック',sans-serif;
+  min-width: 100%;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+.header {
+  height: 80px;
+  border-bottom: 1px solid #949eff;
+  line-height: 60px;
+}
+
+.header li{
+  display: inline-block;
+  margin:0 30px;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 56px;
+  font-weight: 400;
+  color: #5557c7;
+}
+
+h2, h3 {
+  font-family: "Lato";
+  color: #0f1657;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+h3 {
+  font-size: 20px;
+  border-bottom: 1px solid #949eff;
+  line-height: 64px;
+  margin-bottom: 40px;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+
+p {
+  font-size: 22px;
+}
+
+.main-wrapper {
+  background-color: #f8f8fc;
+}
+
+.main {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 96px 0;
+}
+
+.item-container {
+  margin-top: 96px;
+}
+
+.card {
+  display: inline-block;
+  width: 22.5%;
+  margin-right: 14px;
+  margin-left: 12px;
+  text-align: center;
+  box-shadow: 0 0 6px #e8e8e8;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.item {
+  border-radius: 4px;
+  padding: 48px 0 64px;
+}
+
+.item img {
+  width: 126px;
+  height: 140px;
+}
+
+.item p {
+  color: #2b546a;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-inner {
+  position: absolute;
+  top: 8%;
+  right: 0;
+  left: 0;
+  width: 480px;
+  padding-bottom: 60px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+
+.modal-header {
+  height: 8px;
+  width: 100%;
+  margin-bottom: 60px;
+  border-radius: 8px 8px 0 0;
+}
+
+.modal-introduction p {
+  color: #5876a3;
+  width: 384px;
+  line-height: 32px;
+  text-align: center;
+  margin: 36px auto 40px;
+}
+
+.modal-start-btn {
+  cursor: pointer;
+  user-select: none;
+  background-color: #f44336;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 1px 4px 1px #bd433a;
+  display: inline-block;
+  width: 180px;
+  height: 48px;
+  margin: auto;
+}
+
+#start {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.modal-start-btn:hover {
+  background-color: #e7493e;
+  box-shadow: none;
+  position: relative;
+  top: 3px;
+}
+
+#start:hover {
+  color: rgb(233, 232, 232);
+  font-weight: bold;
+}
+
+.modal-close-btn {
+  font-size: 20px;
+  font-weight: bold;
+  border: 0 solid #999;
+  color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 40px;
+  line-height: 36px;
+  cursor: pointer;
+  transition: .2s;
+  user-select: none;
+  outline: 0;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.modal-close-btn:hover {
+  background: rgb(65, 64, 64);
+  border-color: rgb(65, 64, 64);
+  color: #FFF;
+}
+
+.footer {
+  padding: 40px 0;
+}
+
+.footer-contact {
+  text-align: center;
+}
+
+.footer-contact li {
+  color: #2b546a;
+  display: inline-block;
+  padding-left: 16px;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: black;
+  text-decoration: none;
+}
+
+/* タブレット向けレイアウト */
+ @media (max-width: 1040px) {
+  .main-wrapper {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .cards{
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* スマホ向けレイアウト */
+ @media (max-width:670px) {
+  .header li{
+    margin:0 26px 0 -5px;
+  }
+  
+
+  .main-wrapper {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 50%;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .modal-inner ,.modal-introduction p {
+   width: 80%;
+  }
+}
